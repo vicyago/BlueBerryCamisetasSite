@@ -11,7 +11,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #34282c;
-    background: #c3fdb8;
+    background: white;
 }
 img {
     max-width: 100%;
@@ -130,7 +130,7 @@ h2 {
 
 /* flexmain */
 .header {
-    background-image: linear-gradient(#f0fff0, #98ff98);
+    background: white;
     color: #02176f;
     min-height: 400px;
 }
