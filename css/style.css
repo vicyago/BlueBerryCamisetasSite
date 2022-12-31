@@ -33,8 +33,8 @@ h2 {
     font-size: 1em;
     text-transform: uppercase;
     background: #021e6d;
-    background: -webkit-linear-gradient(to left, #2560df, #021e6d);
-    background: linear-gradient(to left, #1c50e0, #02166d);
+    background: -webkit-linear-gradient(to left, #2560df, #032c9e);
+    background: linear-gradient(to left, #1c50e0, #021d94);
     padding-bottom: 10px;
 }
 
@@ -230,7 +230,7 @@ h2 {
     align-items: center;
 }
 .footer {
-    background: #02176f;
+    background: #032c9e;
     color: #fff;
     display: flex;
     align-self: end;
