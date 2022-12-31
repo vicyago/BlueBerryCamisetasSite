@@ -1,4 +1,3 @@
-
 .sectionAbout {
     font-size: 0.9em;
     line-height: 1.5rem;
@@ -91,4 +90,7 @@
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
+    border-color: #527dfc;
+    border-style: dotted;
+    box-shadow: 0 1px 5px 2px #575757b6;
 }
