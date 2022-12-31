@@ -208,7 +208,9 @@ h2 {
 .wrap {
     flex-wrap: wrap;
 }
-
+.pNamePrdt {
+    text-align: center;
+}
 /* Footer */
 .footer a {
     color: #fff;
