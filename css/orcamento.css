@@ -48,6 +48,7 @@
     justify-content: center;
     line-height: 2rem;
     margin: 5%;
+    color: #02176f;
 }
 .sectionOpcao {
     align-items: center;
@@ -218,7 +219,7 @@ input:checked + .slider:before {
 .Item {
     font-size: 0.9em;
 }
-@media screen and (max-width: 800px) and (min-width: 340px) {
+@media screen and (max-width: 760px) and (min-width: 340px) {
     .centerFixData {
         font-size: 1.1em;
         text-align: center;
