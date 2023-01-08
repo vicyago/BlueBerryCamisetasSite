@@ -180,6 +180,7 @@ p {
 
 .boxes .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -226,6 +227,12 @@ p {
     text-align: center;
     color: #02176f;
 }
+.nossosProdutos {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #02176f;
+    text-align: center;
+}
 /* Footer */
 .footer a {
     color: #fff;
@@ -252,6 +259,7 @@ p {
     margin: 0;
     padding-top: 1%;
     padding-bottom: 1%;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -262,7 +270,6 @@ p {
     }
 
     .boxes .container {
-        display: block;
         text-align: center;
     }
 
@@ -295,4 +302,22 @@ p {
         font-size: 8px;
         font-weight: bold;
     }
+}
+@media screen and (max-width: 847px) and (min-width: 464px) {
+    .wrap div{
+        flex-basis: 49%;
+    }
+
+}
+@media screen and (max-width: 1130px) and (min-width: 426px) {
+    .wrap:nth-of-type(2) div{
+    flex-wrap: wrap;
+    flex-basis: 30%;
+}
+}
+
+@media (max-width: 478px) and (min-width: 330px) {
+    .wrap div {
+        flex-basis: 100%;
+    }    
 }

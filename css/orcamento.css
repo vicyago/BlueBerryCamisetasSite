@@ -1,11 +1,9 @@
 .centerFix {
     align-self: center;
-    display: grid;
     justify-content: center;
 }
 .centerFixData {
     align-self: center;
-    display: grid;
     font-size: 2em;
     justify-content: center;
     margin: 2% 5%;
@@ -16,8 +14,8 @@
 }
 .divProducts {
     align-items: center;
-    display: grid;
     justify-content: center;
+    display: flex;
     margin-left: 5%;
     margin-right: 5%;
     text-align-last: center;
@@ -32,12 +30,13 @@
     transition: 0.3s;
 }
 .ulProducts {
-    column-gap: 5%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     font-size: 1em;
     font-weight: 300;
-    gap: 2%;
-    grid-template-columns: repeat(6, 1fr);
+}
+.ulProducts li{
+    margin-bottom: 1rem;
 }
 .sectionDados {
     align-items: center;
@@ -71,6 +70,9 @@
 }
 .personalizarion {
     margin-top: 0;
+}
+.box  h2{
+    text-align: center;
 }
 .comentarioHolder {
     line-height: 2em;
@@ -214,7 +216,6 @@ input:checked + .slider:before {
 .capuzBolso {
     display: grid;
     grid-template-columns: 90px 90px;
-    margin-bottom: 4px;
 }
 .Item {
     font-size: 0.9em;
@@ -229,7 +230,8 @@ input:checked + .slider:before {
         text-align: center;
     }
     .sectionDados {
-        display: block;
+        display: flex;
+        flex-direction: column;
         font-size: 1em;
         line-height: 2rem;
     }
@@ -237,15 +239,8 @@ input:checked + .slider:before {
         font-size: 1em;
         padding: 0;
     }
-    .ulProducts {
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 75%;
-    }
     .imageHolderForm {
         display: none;
-    }
-    .comentarioHolder {
-        margin-top: 20%;
     }
     .formularioHolder h5,
     span {
@@ -290,5 +285,24 @@ input:checked + .slider:before {
     }
     .caixaProdutosCel {
         display: block;
+    }
+}
+@media screen and (min-width: 761px) {
+    .ulProducts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        width: 100%;       
+    }
+    .ulProducts li{
+        flex: 26%;
+        max-width: 26%;
+    }
+    .sectionDados {
+        flex-wrap: wrap;
+    }
+    .dadosBasis {
+        flex-basis: 49%;  
+        text-align: center;      
     }
 }

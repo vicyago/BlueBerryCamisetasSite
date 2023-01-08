@@ -1,3 +1,6 @@
+.wrap1 {
+    flex-wrap: wrap;
+}
 .flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -15,13 +18,6 @@
     color: white;
     font-weight: bold;
     font-size: 3em;
-    text-align: center;
-}
-
-.nossosProdutos {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #02176f;
     text-align: center;
 }
 
