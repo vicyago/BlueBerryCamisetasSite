@@ -6,7 +6,7 @@
     transition: all 0.9s ease;
 }
 .btn2top .sticky-btn img {
-    width: 45px;
+    width: 40px;
     height: 40px;
 }
 .btn2top .sticky-btn.revealed {

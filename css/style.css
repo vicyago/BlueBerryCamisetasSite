@@ -188,8 +188,8 @@ p {
 
 .box {
     flex: 1;
-    background: #cf9221;
-    color: #fff;
+    background: #e46e00;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     margin: 20px 10px;
     border-color: #527dfc;
