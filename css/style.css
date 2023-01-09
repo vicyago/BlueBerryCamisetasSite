@@ -188,8 +188,8 @@ p {
 
 .box {
     flex: 1;
-    background: #e46e00;
-    color: rgb(255, 255, 255);
+    background: #7f9fef81;
+    color: #02176f;
     border-radius: 5px;
     margin: 20px 10px;
     border-color: #527dfc;
@@ -304,20 +304,19 @@ p {
     }
 }
 @media screen and (max-width: 847px) and (min-width: 464px) {
-    .wrap div{
+    .wrap div {
         flex-basis: 49%;
     }
-
 }
 @media screen and (max-width: 1130px) and (min-width: 426px) {
-    .wrap:nth-of-type(2) div{
-    flex-wrap: wrap;
-    flex-basis: 30%;
-}
+    .wrap:nth-of-type(2) div {
+        flex-wrap: wrap;
+        flex-basis: 30%;
+    }
 }
 
 @media (max-width: 478px) and (min-width: 330px) {
     .wrap div {
         flex-basis: 100%;
-    }    
+    }
 }

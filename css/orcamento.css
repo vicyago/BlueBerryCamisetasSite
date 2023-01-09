@@ -35,7 +35,7 @@
     font-size: 1em;
     font-weight: 300;
 }
-.ulProducts li{
+.ulProducts li {
     margin-bottom: 1rem;
 }
 .sectionDados {
@@ -58,6 +58,7 @@
     margin: 5%;
 }
 .sectionDetalhes {
+    color: #000000;
     align-items: center;
     display: none;
     font-size: 1em;
@@ -71,7 +72,7 @@
 .personalizarion {
     margin-top: 0;
 }
-.box  h2{
+.box h2 {
     text-align: center;
 }
 .comentarioHolder {
@@ -170,6 +171,7 @@ input:checked + .slider:before {
 }
 .input {
     background-color: #02186f70;
+    color: white;
     border: 2px solid transparent;
     border-radius: 4px;
     box-shadow: 0 1px 6px rgba(80, 80, 80, 0.64);
@@ -291,10 +293,10 @@ input:checked + .slider:before {
     .ulProducts {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between; 
-        width: 100%;       
+        justify-content: space-between;
+        width: 100%;
     }
-    .ulProducts li{
+    .ulProducts li {
         flex: 26%;
         max-width: 26%;
     }
@@ -302,7 +304,7 @@ input:checked + .slider:before {
         flex-wrap: wrap;
     }
     .dadosBasis {
-        flex-basis: 49%;  
-        text-align: center;      
+        flex-basis: 49%;
+        text-align: center;
     }
 }
