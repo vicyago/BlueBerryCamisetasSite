@@ -2,19 +2,17 @@ displayDetail();
 imgListen();
 colorInput();
 
-document.getElementById("mainButton").addEventListener("click", function () {
-    sub_form();
-});
-let form = document.getElementsByTagName("form")[0];
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    for (const [name, value] of data) {
-        console.log(name, ":", value);
-    }
-});
-function sub_form() {
-    document.getElementsByTagName("form")[0].submit();
+document.getElementById("mainButton").addEventListener("click", function(){sub_form()})
+let form = document.getElementsByTagName("form")[0]
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+  const data = new FormData(form);
+  for (const [name,value] of data) {
+    console.log(name, ":", value)
+  }
+})
+function sub_form(){
+    document.getElementsByTagName("form")[0].submit()
 }
 function displayDetail() {
     let checkInput = document.querySelectorAll(".checkBox");

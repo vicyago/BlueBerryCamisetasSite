@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BlueBerryOrcamentoPage</title>
     <script src="https://kit.fontawesome.com/d8e8b64961.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../BlueBerryCamisetasSite/css/style.css">
-    <link rel="stylesheet" href="../BlueBerryCamisetasSite/css/orcamento.css">
-    <link rel="stylesheet" href="../BlueBerryCamisetasSite/css/stickyButtons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orcamento.css">
+    <link rel="stylesheet" href="css/stickyButtons.css">
     <script src="https://byjaris.com/code/js/jquery.min.js"></script>
 </head>
 
@@ -18,7 +18,7 @@
         <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
             <i class="fa fa-bars"></i>
         </label>
-        <a href="#" class="logo"><img src="../BlueBerryCamisetasSite/img/Logo.png"></a>
+        <a href="#" class="logo"><img src="img/Logo.png"></a>
         <input type="checkbox" id="chkToggle">
         <ul class="main-nav" id="js-menu">
             <li>
@@ -47,12 +47,12 @@
                         marildablueberry@uol.com.br</a>
                 </p>
             </div>
-            <img src="../BlueBerryCamisetasSite/img/logoImg.png">
+            <img src="img/logoImg.png">
         </div>
     </header>
     <div class="btn2top">
         <a href="#page-top" class="sticky-btn">
-            <img src="../BlueBerryCamisetasSite/img/seta-para-cima.png"></a>
+            <img src="img/seta-para-cima.png"></a>
     </div>
     <section class="boxes">
         <div class="container">
@@ -61,7 +61,7 @@
                 <p style="text-align: center; color: rgb(194, 20, 20);">
                     ✏ * Preenchimento obrigatório!
                 </p>
-                <form>
+                <form action="email.php" method="POST">
                     <div class="sectionDados">
                         <div class="dadosBasis">
                             <div><label class="#">◼ Seu Nome ✏️*</label></div>
@@ -104,7 +104,7 @@
                     <div class="divProducts">
                         <ul id="imgsArray" class="ulProducts">
                             <li>
-                                <img src="../BlueBerryCamisetasSite/img/camiseta.png" />
+                                <img src="img/camiseta.png" />
                                 <p class="input">
                                     Camiseta<br />
                                     <label class="switch"><input id="camiseta" class="input checkBox"
@@ -114,8 +114,8 @@
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
-                                    <select name="Material_da_peca_camiseta" class="inputDetalhes"
-                                        id="Material_da_peça_camiseta" required>
+                                    <select name="Material_da_peca_camiseta" class="inputDetalhes required"
+                                        id="Material_da_peça_camiseta">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Algodao_cardada">Algodão Cardada</option>
                                         <option value="Algodao_penteada">Algodão Penteada</option>
@@ -124,11 +124,11 @@
                                         <option value="Dry_dry_fit_AM">Dry fit Poliamida</option>
                                     </select>
                                     <label for="camisetaColor" class="colorName">Cor da Peça: </label>
-                                    <input type="text" name="colorName" id="camisetaColor" min="30" size="20"
-                                        maxlength="30" placeholder="Digitar Cor" required />
+                                    <input type="text" name="colorName" id="camisetaColor" class="required" min="30"
+                                        size="20" maxlength="30" placeholder="Digitar Cor" />
                                     <label class="#"></label>
-                                    <select name="Cor_da_peca_camiseta" class="inputDetalhes corPeca"
-                                        id="Cor_da_peca_camiseta" required>
+                                    <select name="Cor_da_peca_camiseta" class="inputDetalhes corPeca required"
+                                        id="Cor_da_peca_camiseta">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#fff">Branco</option>
                                         <option value="#808080">Cinza</option>
@@ -157,27 +157,27 @@
                                         <option value="#f5f5dc">Bege</option>
                                     </select>
                                     <label class="#">Tipo de Gola:</label>
-                                    <select name="Tipo_de_gola_camiseta" class="inputDetalhes"
-                                        id="Tipo_de_gola_camiseta" required>
+                                    <select name="Tipo_de_gola_camiseta" class="inputDetalhes required"
+                                        id="Tipo_de_gola_camiseta">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Redonda">Redonda (Careca)</option>
                                         <option value="V">Gola "V"</option>
                                     </select>
                                     <label for="amount_camiseta" class="#">Quantidade:</label>
                                     <input type="number" id="amount_camiseta" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" required /><br />
+                                        maxlength="30" placeholder="30 peças" class="required" /><br />
                                     <label class="personalizarion"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="Personalização" class="inputDetalhes"
-                                        id="PersonalizaçãoBordado_camiseta" required>
+                                    <select name="Personalização" class="inputDetalhes required"
+                                        id="PersonalizaçãoBordado_camiseta">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="50">Sim</option>
                                         <option value="50">Não</option>
                                     </select>
                                     <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoSilk_camiseta"
-                                        required>
+                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
+                                        id="PersonalizaçãoSilk_camiseta">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#">Sim</option>
                                         <option value="#">Não</option>
@@ -201,7 +201,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="../BlueBerryCamisetasSite/img/polo.png" />
+                                <img src="img/polo.png" />
                                 <p class="input">
                                     Polo<br />
                                     <label class="switch"><input id="golaPolo" class="input checkBox"
@@ -211,8 +211,8 @@
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
-                                    <select name="Material_da_peca_polo" class="inputDetalhes"
-                                        id="Material_da_peça_polo" required>
+                                    <select name="Material_da_peca_polo" class="inputDetalhes required"
+                                        id="Material_da_peça_polo">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Algodao_cardada">Algodão Cardada</option>
                                         <option value="Algodao_penteada">Algodão Penteada</option>
@@ -221,10 +221,10 @@
                                     </select>
                                     <label for="poloColor" class="colorName">Cor da Peça: </label>
                                     <input type="text" name="colorName" id="poloColor" min="30" size="20" maxlength="30"
-                                        placeholder="Digitar Cor" required />
+                                        placeholder="Digitar Cor" class="required" />
                                     <label class="#"></label>
-                                    <select name="Cor_da_peca_polo" class="inputDetalhes corPeca" id="Cor_da_peca_polo"
-                                        required>
+                                    <select name="Cor_da_peca_polo" class="inputDetalhes corPeca required"
+                                        id="Cor_da_peca_polo">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#fff">Branco</option>
                                         <option value="#808080">Cinza</option>
@@ -253,26 +253,26 @@
                                         <option value="#f5f5dc">Beige</option>
                                     </select>
                                     <label class="#">Tipo de Gola:</label>
-                                    <select name="Tipo_de_gola_polo" class="inputDetalhes" id="Tipo_de_gola_polo"
-                                        required>
+                                    <select name="Tipo_de_gola_polo" class="inputDetalhes required"
+                                        id="Tipo_de_gola_polo">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Redonda">Gola Polo</option>
                                     </select>
                                     <label for="amount_polo" class="#">Quantidade:</label>
                                     <input type="number" id="amount_polo" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" required /><br />
+                                        maxlength="30" placeholder="30 peças" class="required" /><br />
                                     <label class="personalizarion"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_polo"
-                                        required>
+                                    <select name="Personalização" class="inputDetalhes required"
+                                        id="PersonalizaçãoBordado_polo">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="50">Sim</option>
                                         <option value="50">Não</option>
                                     </select>
                                     <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoSilk_polo"
-                                        required>
+                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
+                                        id="PersonalizaçãoSilk_polo">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#">Sim</option>
                                         <option value="#">Não</option>
@@ -296,7 +296,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="../BlueBerryCamisetasSite/img/hoodie.png" />
+                                <img src="img/hoodie.png" />
                                 <p class="input">
                                     Agasalho<br />
                                     <label class="switch"><input id="agasalho" class="input checkBox"
@@ -306,17 +306,17 @@
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
-                                    <select name="Material_da_peca_agasalho" class="inputDetalhes"
-                                        id="Material_da_peça_agasalho" required>
+                                    <select name="Material_da_peca_agasalho" class="inputDetalhes required"
+                                        id="Material_da_peça_agasalho">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Algodao_cardada">Moleton Flanelado</option>
                                     </select>
                                     <label for="agasalhoColor" class="colorName">Cor da Peça: </label>
                                     <input type="text" name="colorName" id="agasalhoColor" min="30" size="20"
-                                        maxlength="30" placeholder="Digitar Cor" required />
+                                        maxlength="30" placeholder="Digitar Cor" class="required" />
                                     <label class="#"></label>
-                                    <select name="Cor_da_peca_agasalho" class="inputDetalhes corPeca"
-                                        id="Cor_da_peca_agasalho" required>
+                                    <select name="Cor_da_peca_agasalho" class="inputDetalhes corPeca required"
+                                        id="Cor_da_peca_agasalho">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#fff">Branco</option>
                                         <option value="#808080">Cinza</option>
@@ -348,8 +348,8 @@
                                     <div class="capuzBolso">
                                         <div class="Item">
                                             <label class="#"></label>
-                                            <select name="c/s-capuz_agasalho" class="inputDetalhes"
-                                                id="c/s-capuz_agasalho" style="border-color: #2196f3;" required>
+                                            <select name="c/s-capuz_agasalho" class="inputDetalhes required"
+                                                id="c/s-capuz_agasalho" style="border-color: #2196f3;">
                                                 <option value="" selected="selected">Capuz</option>
                                                 <option value="c/capuz">Com</option>
                                                 <option value="s/capuz">Sem</option>
@@ -357,8 +357,8 @@
                                         </div>
                                         <div class="Item">
                                             <label class="#"></label>
-                                            <select name="c/s-bolso_agasalho" class="inputDetalhes"
-                                                id="c/s-bolso_agasalho" style="border-color: #fcb641;" required>
+                                            <select name="c/s-bolso_agasalho" class="inputDetalhes required"
+                                                id="c/s-bolso_agasalho" style="border-color: #fcb641;">
                                                 <option value="" selected="selected">Bolso</option>
                                                 <option value="c/bolso">Com</option>
                                                 <option value="s/bolso">Sem</option>
@@ -367,19 +367,19 @@
                                     </div>
                                     <label for="amount_agasalho" class="#">Quantidade:</label>
                                     <input type="number" id="amount_agasalho" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" required /><br />
+                                        maxlength="30" placeholder="30 peças" class="required" /><br />
                                     <label class="personalizarion"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="Personalização" class="inputDetalhes"
-                                        id="PersonalizaçãoBordado_agasalho" required>
+                                    <select name="Personalização" class="inputDetalhes required"
+                                        id="PersonalizaçãoBordado_agasalho">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="50">Sim</option>
                                         <option value="50">Não</option>
                                     </select>
                                     <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoSilk_agasalho"
-                                        required>
+                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
+                                        id="PersonalizaçãoSilk_agasalho">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#">Sim</option>
                                         <option value="#">Não</option>
@@ -403,7 +403,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="../BlueBerryCamisetasSite/img/abada.png" />
+                                <img src="img/abada.png" />
                                 <p class="input">
                                     Abadá<br />
                                     <label class="switch"> <input id="abada" class="input checkBox"
@@ -413,8 +413,8 @@
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
-                                    <select name="Material_da_peca_abada" class="inputDetalhes"
-                                        id="Material_da_peça_abada" required>
+                                    <select name="Material_da_peca_abada" class="inputDetalhes required"
+                                        id="Material_da_peça_abada">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Algodao_cardada">Algodão Cardada</option>
                                         <option value="Algodao_penteada">Algodão Penteada</option>
@@ -424,10 +424,10 @@
                                     </select>
                                     <label for="abadaColor" class="colorName">Cor da Peça: </label>
                                     <input type="text" name="colorName" id="abadaColor" min="30" size="20"
-                                        maxlength="30" placeholder="Digitar Cor" required />
+                                        maxlength="30" placeholder="Digitar Cor" class="required" />
                                     <label class="#"></label>
-                                    <select name="Cor_da_peca_abada" class="inputDetalhes corPeca"
-                                        id="Cor_da_peca_abada" required>
+                                    <select name="Cor_da_peca_abada" class="inputDetalhes corPeca required"
+                                        id="Cor_da_peca_abada">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#fff">Branco</option>
                                         <option value="#808080">Cinza</option>
@@ -456,27 +456,27 @@
                                         <option value="#f5f5dc">Beige</option>
                                     </select>
                                     <label class="#">Abertura Lateral:</label>
-                                    <select name="Tipo_de_abertura_abada" class="inputDetalhes"
-                                        id="Tipo_de_abertura_abada" required>
+                                    <select name="Tipo_de_abertura_abada" class="inputDetalhes required"
+                                        id="Tipo_de_abertura_abada">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Fechado">Fechado</option>
                                         <option value="Elastico">Elastico</option>
                                     </select>
                                     <label for="amount_abada" class="#">Quantidade:</label>
                                     <input type="number" id="amount_abada" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" required /><br />
+                                        maxlength="30" placeholder="30 peças" class="required" /><br />
                                     <label class="personalizarion"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_abada"
-                                        required>
+                                    <select name="Personalização" class="inputDetalhes required"
+                                        id="PersonalizaçãoBordado_abada">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="50">Sim</option>
                                         <option value="50">Não</option>
                                     </select>
                                     <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoSilk_abada"
-                                        required>
+                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
+                                        id="PersonalizaçãoSilk_abada">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#">Sim</option>
                                         <option value="#">Não</option>
@@ -500,7 +500,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="../BlueBerryCamisetasSite/img/ecobag.png" />
+                                <img src="img/ecobag.png" />
                                 <p class="input">
                                     Ecobag<br />
                                     <label class="switch"> <input id="ecobag" class="input checkBox"
@@ -510,41 +510,41 @@
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
-                                    <select name="Material_da_peca_ecobag" class="inputDetalhes"
-                                        id="Material_da_peça_ecobag" required>
+                                    <select name="Material_da_peca_ecobag" class="inputDetalhes required"
+                                        id="Material_da_peça_ecobag">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Algodao_cru">Algodão Cru</option>
                                     </select>
                                     <label for="ecobagColor" class="colorName">Cor da Peça: </label>
                                     <input type="text" name="colorName" id="ecobagColor" min="30" size="20"
-                                        maxlength="30" placeholder="Digitar Cor" required />
+                                        maxlength="30" placeholder="Digitar Cor" class="required" />
                                     <label class="#"></label>
-                                    <select name="Cor_da_peca_ecobag" class="inputDetalhes corPeca"
-                                        id="Cor_da_peca_ecobag" required>
+                                    <select name="Cor_da_peca_ecobag" class="inputDetalhes corPeca required"
+                                        id="Cor_da_peca_ecobag">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#C7A975">Algodão Cru</option>
                                     </select>
                                     <label class="#">Tipo de Alça:</label>
-                                    <select name="Tipo_de_alça_ecobag" class="inputDetalhes" id="Tipo_de_alça_ecobag"
-                                        required>
+                                    <select name="Tipo_de_alça_ecobag" class="inputDetalhes required"
+                                        id="Tipo_de_alça_ecobag">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Redonda">Algodao Trançado</option>
                                     </select>
                                     <label for="amount_ecobag" class="#">Quantidade:</label>
                                     <input type="number" id="amount_ecobag" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" required /><br />
+                                        maxlength="30" placeholder="30 peças" class="required" /><br />
                                     <label class="personalizarion"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="Personalização" class="inputDetalhes"
-                                        id="PersonalizaçãoBordado_ecobag" required>
+                                    <select name="Personalização" class="inputDetalhes required"
+                                        id="PersonalizaçãoBordado_ecobag">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="50">Sim</option>
                                         <option value="50">Não</option>
                                     </select>
                                     <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoSilk_ecobag"
-                                        required>
+                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
+                                        id="PersonalizaçãoSilk_ecobag">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#">Sim</option>
                                         <option value="#">Não</option>
@@ -568,7 +568,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="../BlueBerryCamisetasSite/img/mask.png" />
+                                <img src="img/mask.png" />
                                 <p class="input">
                                     Máscara<br />
                                     <label class="switch"> <input id="mask" class="input checkBox"
@@ -578,8 +578,8 @@
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
-                                    <select name="Material_da_peca_mask" class="inputDetalhes"
-                                        id="Material_da_peça_mask" required>
+                                    <select name="Material_da_peca_mask" class="inputDetalhes required"
+                                        id="Material_da_peça_mask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Algodao_cardada">Algodão Cardada</option>
                                         <option value="Algodao_penteada">Algodão Penteada</option>
@@ -587,10 +587,10 @@
                                     </select>
                                     <label for="maskColor" class="colorName">Cor da Peça: </label>
                                     <input type="text" name="colorName" id="maskColor" min="30" size="20" maxlength="30"
-                                        placeholder="Digitar Cor" required />
+                                        placeholder="Digitar Cor" class="required" />
                                     <label class="#"></label>
-                                    <select name="Cor_da_peca_mask" class="inputDetalhes corPeca" id="Cor_da_peca_mask"
-                                        required>
+                                    <select name="Cor_da_peca_mask" class="inputDetalhes corPeca required"
+                                        id="Cor_da_peca_mask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#fff">Branco</option>
                                         <option value="#808080">Cinza</option>
@@ -619,26 +619,26 @@
                                         <option value="#f5f5dc">Beige</option>
                                     </select>
                                     <label class="#">Tipo de Forma:</label>
-                                    <select name="Tipo_de_forma_mask" class="inputDetalhes" id="Tipo_de_forma_mask"
-                                        required>
+                                    <select name="Tipo_de_forma_mask" class="inputDetalhes required"
+                                        id="Tipo_de_forma_mask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Bico_pato">Bico de Pato</option>
                                     </select>
                                     <label for="amount_mask" class="#">Quantidade:</label>
                                     <input type="number" id="amount_mask" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" required /><br />
+                                        maxlength="30" placeholder="30 peças" class="required" /><br />
                                     <label class="personalizarion"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_mask"
-                                        required>
+                                    <select name="Personalização" class="inputDetalhes required"
+                                        id="PersonalizaçãoBordado_mask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="50">N/disponível</option>
                                         <option value="50">#</option>
                                     </select>
                                     <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoSilk_mask"
-                                        required>
+                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
+                                        id="PersonalizaçãoSilk_mask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#">Sim</option>
                                         <option value="#">Não</option>
@@ -680,7 +680,8 @@
                                 <strong><em>Campos com * são de preenchimento obrigatório!</em></strong>
                             </span>
                         </h5>
-                        <button style="color: rgb(255, 255, 255);" class="mainButton" id="mainButton">Enviar
+                        <button type="submit" style="color: rgb(255, 255, 255);" class="mainButton"
+                            id="mainButton">Enviar
                             Formulário</button>
                     </div>
                 </form>
@@ -696,7 +697,7 @@
                     <i class="fa-solid fa-lines-leaning"></i>
                 </h2>
                 <p>
-                    ✏ Trabalhamos com um minimo de 30 peças por pedido, agradecemos a compreenção.
+                    ✏ Trabalhamos com um mínimo de 30 peças por pedido, agradecemos a compreensão.
 
                 </p>
             </div>
@@ -715,7 +716,7 @@
                     <i class="fa-solid fa-lines-leaning"></i>
                 </h2>
                 <p>
-                    ✏ Consulte um de nosses atendente especializados atraves de nosso email para maiores informações.
+                    ✏ Consulte um de nossos atendente especializados através de nosso email para mais informações.
                 </p>
             </div>
         </div>
@@ -745,15 +746,15 @@
                         <h3>(19) 3231-2968</h3>
                         <h3>Facebook:
                             <a class="blue" href="https://www.facebook.com/Blueberry-Camisetas-309011612639981/"
-                                target="_blank" title="facebook" style="color: #4b217a"> BlueBerryCamisetas</a>
+                                target="_blank" title="facebook" style="color: white"> BlueBerryCamisetas</a>
                         </h3>
                         <h3>Email:
                             <a class="blue" href="mailto:marildablueberry@uol.com.br" target="_blank"
-                                style="color: #4b217a">marildablueberry@uol.com.br</a>
+                                style="color: white">marildablueberry@uol.com.br</a>
                         </h3>
                         <h3>Designed By:
                             <a class="blue" href="https://www.facebook.com/victoryagoc" target="_blank"
-                                style="color: #4b217a">Victor Yago
+                                style="color: white">Victor Yago
                                 Cury</a>
                         </h3>
                         <h3>Copyright ©️ 2023</h3>
@@ -763,8 +764,8 @@
         </div>
     </footer>
 
-    <script src="../BlueBerryCamisetasSite/js/stickyButtons.js"></script>
-    <script src="../BlueBerryCamisetasSite/js/scriptOrc.js"></script>
+    <script src="js/stickyButtons.js"></script>
+    <script src="js/scriptOrc.js"></script>
 
 </body>
 
