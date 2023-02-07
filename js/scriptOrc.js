@@ -2,7 +2,7 @@ displayDetail();
 imgListen();
 colorInput();
 
-document.getElementById("mainButton").addEventListener("click", function(){sub_form()})
+//document.getElementById("mainButton").addEventListener("click", function(){sub_form()})
 let form = document.getElementsByTagName("form")[0]
 form.addEventListener("submit", function(e) {
   e.preventDefault();
