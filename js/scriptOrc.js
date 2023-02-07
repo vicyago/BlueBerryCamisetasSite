@@ -1,6 +1,14 @@
 displayDetail();
 imgListen();
 colorInput();
+
+document.getElementById("mainButton").addEventListener("click", function () {
+    sub_form();
+});
+function sub_form() {
+    console.log("submin");
+    document.getElementsByTagName("form")[0].submit();
+}
 function displayDetail() {
     let checkInput = document.querySelectorAll(".checkBox");
     checkInput.forEach(function (btnChk) {
@@ -9,7 +17,9 @@ function displayDetail() {
             let checkDiv = checkLi.querySelector(".sectionDetalhes");
             if (btnChk.checked) {
                 checkDiv.style.display = "grid";
+                makeRequirements(checkDiv, 0);
             } else {
+                makeRequirements(checkDiv, 1);
                 checkDiv.style.display = "none";
             }
             hideDivForm();
@@ -42,15 +52,27 @@ function imgListen() {
         nextInput.click();
     }
 }
+function makeRequirements(checkLi, inx) {
+    let requiredFields = checkLi.querySelectorAll(".required");
+    if (inx == 0) {
+        requiredFields.forEach(function (item, index) {
+            item.required = true;
+        });
+    } else {
+        requiredFields.forEach(function (item, index) {
+            item.required = false;
+        });
+    }
+}
 function colorInput() {
-    let textColorInputs = document.querySelectorAll("input[name=colorNome]");
+    let textColorInputs = document.querySelectorAll("input[name=colorName]");
     let selectColorInput = document.querySelectorAll(".corPeca");
 
     function checkColorInput(currentInput, inputChoose) {
         let colorSelector =
             currentInput.parentElement.querySelector(".corPeca");
         let colorTextInput = currentInput.parentElement.querySelector(
-            "input[name=colorNome]"
+            "input[name=colorName]"
         );
         let disabledInput;
         let chooserArray = [
@@ -86,5 +108,6 @@ function colorInput() {
             };
         });
     }
+
     addListeners();
 }
