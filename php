@@ -1,4 +1,11 @@
-
+<?php
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
+    $from = "admin@blueberrycamisetas.com";
+    $to = "victoryagoc@gmail.com";
+    $subject = "Checking PHP mail";
+    $message = ":";
+    $newmessage = "";
     $input_dict = array(
     "Nome" => "Nome do Cliente",
     "Email" => "E-mail",
@@ -52,3 +59,31 @@
     "Comentario" => "Observações e Comentários",
     "tituloMensagem" => "Formulário de Orçamento",
     );
+    
+    $emailTable = "<table>";
+    
+    foreach( $_POST as $key => $value ) {
+        if(empty($value)) {continue;}
+        #$newmessage = $newmessage.$key.$message.$value."\n";
+        
+        $corretedInputName = $input_dict[$key];
+        $tableRow = 
+        "<tr>
+        <td>".$corretedInputName."</td>
+        <td>".$value."</td>
+        </tr>";
+        
+        $emailTable = $emailTable.$tableRow;
+    
+    }
+    
+    $emailTable = $emailTable."</table>"; 
+    
+    $headers = "MIME-Version: 1.0"."\r\n"; 
+    $headers = $headers."Content-type:text/html;charset=UTF-8"."\r\n";
+    
+    $headers = $headers."From:".$from;
+    mail($to,$subject,$emailTable,$headers);
+    $pecas=$_POST;
+    header("Location:https://blueberrycamisetas.com/orcamento.html?success");
+?>
