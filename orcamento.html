@@ -84,7 +84,7 @@
                                 <label class="#">◼ Celular 📞</label>
                             </div>
                             <div>
-                                <input name="DDD" class="input" id="DDD" size="1" maxlength="3" type="text" />
+                                <input name="dddCel" class="input" id="DDD" size="1" maxlength="3" type="text" />
                                 <input name="Telefone" class="input" id="Telefone" size="10" maxlength="12"
                                     type="text" />
                             </div>
@@ -94,7 +94,7 @@
                                 <label class="#">◼ Telefone ☎️</label>
                             </div>
                             <div>
-                                <input name="DDD2" class="input" id="DDD2" size="1" maxlength="3" type="text" />
+                                <input name="dddTelefone" class="input" id="DDD2" size="1" maxlength="3" type="text" />
                                 <input name="Telefone2" class="input" id="Telefone2" size="10" maxlength="12"
                                     type="text" />
                             </div>
@@ -111,6 +111,7 @@
                                             type="checkbox" /><span class="slider"></span></label>
                                 </p>
                                 <div id="divCamiseta" class="sectionDetalhes">
+                                    <input name="camiseta" type="hidden" value="camiseta">
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
@@ -164,25 +165,34 @@
                                         <option value="V">Gola "V"</option>
                                     </select>
                                     <label for="amount_camiseta" class="#">Quantidade:</label>
-                                    <input type="number" id="amount_camiseta" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" class="required" /><br />
-                                    <label class="personalizarion"><b>Personalização</b></label>
+                                    <input type="number" id="amount_camiseta" name="numeroPecas" min="30" size="20"
+                                        maxlength="30" placeholder="30 peças" class="required" />
+                                    <label class="#">Tamanho da Peça:</label>
+                                    <select name="tamanho_da_peca_camiseta" class="inputDetalhes required"
+                                        id="tamanho_da_peca_camiseta">
+                                        <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                                        <option value="pp">PP</option>
+                                        <option value="p">P</option>
+                                        <option value="m">M</option>
+                                        <option value="g">G</option>
+                                        <option value="gg">GG</option>
+                                    </select>
+                                    <br />
+                                    <label class="custom"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="PersonalizaçãoBordado" class="inputDetalhes required"
-                                        id="PersonalizaçãoBordado_camiseta">
+                                    <select name="bordadoCamiseta" class="inputDetalhes required"
+                                        id="PersonalizacaoBordado_camiseta">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
-                                        id="PersonalizaçãoSilk_camiseta">
+                               veio     <select name="silkCamiseta" class="inputDetalhes required"
+                                        id="personalizacaoSilk_camiseta">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <div class="vetorCon">
                                         <h3>
                                             Anexar os Arquivos <br />
@@ -208,6 +218,7 @@
                                             type="checkbox" /><span class="slider"></span></label>
                                 </p>
                                 <div id="divPolo" class="sectionDetalhes">
+                                    <input name="camisetaPolo" type="hidden" value="camisetaPolo">
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
@@ -259,25 +270,34 @@
                                         <option value="Redonda">Gola Polo</option>
                                     </select>
                                     <label for="amount_polo" class="#">Quantidade:</label>
-                                    <input type="number" id="amount_polo" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" class="required" /><br />
-                                    <label class="personalizarion"><b>Personalização</b></label>
+                                    <input type="number" id="amount_polo" name="numeroPecas" min="30" size="20"
+                                        maxlength="30" placeholder="30 peças" class="required" />
+                                    <label class="#">Tamanho da Peça:</label>
+                                    <select name="tamanho_da_peca_polo" class="inputDetalhes required"
+                                        id="tamanho_da_peca_polo">
+                                        <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                                        <option value="pp">PP</option>
+                                        <option value="p">P</option>
+                                        <option value="m">M</option>
+                                        <option value="g">G</option>
+                                        <option value="gg">GG</option>
+                                    </select>
+                                    <br />
+                                    <label class="custom"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="PersonalizaçãoBordado" class="inputDetalhes required"
-                                        id="PersonalizaçãoBordado_polo">
+                                    <select name="bordadoPolo" class="inputDetalhes required"
+                                        id="PersonalizacaoBordado_polo">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
-                                        id="PersonalizaçãoSilk_polo">
+                                    <select name="silkPolo" class="inputDetalhes required"
+                                        id="personalizacaoSilk_polo">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <div class="vetorCon">
                                         <h3>
                                             Anexar os Arquivos <br />
@@ -303,6 +323,7 @@
                                             type="checkbox" /><span class="slider"></span></label>
                                 </p>
                                 <div id="divAgasalho" class="sectionDetalhes">
+                                    <input name="agasalho" type="hidden" value="agasalho">
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
@@ -348,43 +369,52 @@
                                     <div class="capuzBolso">
                                         <div class="Item">
                                             <label class="#"></label>
-                                            <select name="c/s-capuz_agasalho" class="inputDetalhes required"
-                                                id="c/s-capuz_agasalho" style="border-color: #2196f3;">
+                                            <select name="capuzAgasalho" class="inputDetalhes required"
+                                                id="capuzAgasalho" style="border-color: #2196f3;">
                                                 <option value="" selected="selected">Capuz</option>
-                                                <option value="c/capuz">Com</option>
-                                                <option value="s/capuz">Sem</option>
+                                                <option value="comCapuz">Com</option>
+                                                <option value="semCapuz">Sem</option>
                                             </select>
                                         </div>
                                         <div class="Item">
                                             <label class="#"></label>
-                                            <select name="c/s-bolso_agasalho" class="inputDetalhes required"
-                                                id="c/s-bolso_agasalho" style="border-color: #fcb641;">
+                                            <select name="bolsoAgasalho" class="inputDetalhes required"
+                                                id="bolsoAgasalho" style="border-color: #fcb641;">
                                                 <option value="" selected="selected">Bolso</option>
-                                                <option value="c/bolso">Com</option>
-                                                <option value="s/bolso">Sem</option>
+                                                <option value="comBolso">Com</option>
+                                                <option value="semBolso">Sem</option>
                                             </select>
                                         </div>
                                     </div>
                                     <label for="amount_agasalho" class="#">Quantidade:</label>
-                                    <input type="number" id="amount_agasalho" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" class="required" /><br />
-                                    <label class="personalizarion"><b>Personalização</b></label>
+                                    <input type="number" id="amount_agasalho" name="numeroPecas" min="30" size="20"
+                                        maxlength="30" placeholder="30 peças" class="required" />
+                                    <label class="#">Tamanho da Peça:</label>
+                                    <select name="tamanho_da_peca_agasalho" class="inputDetalhes required"
+                                        id="tamanho_da_peca_agasalho">
+                                        <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                                        <option value="pp">PP</option>
+                                        <option value="p">P</option>
+                                        <option value="m">M</option>
+                                        <option value="g">G</option>
+                                        <option value="gg">GG</option>
+                                    </select>
+                                    <br />
+                                    <label class="custom"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="PersonalizaçãoBordado" class="inputDetalhes required"
-                                        id="PersonalizaçãoBordado_agasalho">
+                                    <select name="bordadoAgasalho" class="inputDetalhes required"
+                                        id="PersonalizacaoBordado_agasalho">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
-                                        id="PersonalizaçãoSilk_agasalho">
+                                    <select name="silkAgasalho" class="inputDetalhes required"
+                                        id="personalizacaoSilk_agasalho">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <div class="vetorCon">
                                         <h3>
                                             Anexar os Arquivos <br />
@@ -410,6 +440,7 @@
                                             type="checkbox" /><span class="slider"></span></label>
                                 </p>
                                 <div id="divAbada" class="sectionDetalhes">
+                                    <input name="abada" type="hidden" value="abada">
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
@@ -463,25 +494,34 @@
                                         <option value="Elastico">Elastico</option>
                                     </select>
                                     <label for="amount_abada" class="#">Quantidade:</label>
-                                    <input type="number" id="amount_abada" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" class="required" /><br />
-                                    <label class="personalizarion"><b>Personalização</b></label>
+                                    <input type="number" id="amount_abada" name="numeroPecas" min="30" size="20"
+                                        maxlength="30" placeholder="30 peças" class="required" />
+                                    <label class="#">Tamanho da Peça:</label>
+                                    <select name="tamanho_da_peca_abada" class="inputDetalhes required"
+                                        id="tamanho_da_peca_abada">
+                                        <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                                        <option value="pp">PP</option>
+                                        <option value="p">P</option>
+                                        <option value="m">M</option>
+                                        <option value="g">G</option>
+                                        <option value="gg">GG</option>
+                                    </select>
+                                    <br />
+                                    <label class="custom"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="PersonalizaçãoBordado" class="inputDetalhes required"
-                                        id="PersonalizaçãoBordado_abada">
+                                    <select name="bordadoAbada" class="inputDetalhes required"
+                                        id="PersonalizacaoBordado_abada">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
-                                        id="PersonalizaçãoSilk_abada">
+                                    <select name="silkAbada" class="inputDetalhes required"
+                                        id="personalizacaoSilk_abada">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <div class="vetorCon">
                                         <h3>
                                             Anexar os Arquivos <br />
@@ -507,6 +547,7 @@
                                             type="checkbox" /><span class="slider"></span></label>
                                 </p>
                                 <div id="divEcobag" class="sectionDetalhes">
+                                    <input name="ecobag" type="hidden" value="ecobag">
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
@@ -531,25 +572,34 @@
                                         <option value="Redonda">Algodao Trançado</option>
                                     </select>
                                     <label for="amount_ecobag" class="#">Quantidade:</label>
-                                    <input type="number" id="amount_ecobag" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" class="required" /><br />
-                                    <label class="personalizarion"><b>Personalização</b></label>
+                                    <input type="number" id="amount_ecobag" name="numeroPecas" min="30" size="20"
+                                        maxlength="30" placeholder="30 peças" class="required" />
+                                    <label class="#">Tamanho da Peça:</label>
+                                    <select name="tamanho_da_peca_ecobag" class="inputDetalhes required"
+                                        id="tamanho_da_peca_ecobag">
+                                        <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                                        <option value="pp">PP</option>
+                                        <option value="p">P</option>
+                                        <option value="m">M</option>
+                                        <option value="g">G</option>
+                                        <option value="gg">GG</option>
+                                    </select>
+                                    <br />
+                                    <label class="custom"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="PersonalizaçãoBordado" class="inputDetalhes required"
-                                        id="PersonalizaçãoBordado_ecobag">
+                                    <select name="bordadoEcobag" class="inputDetalhes required"
+                                        id="PersonalizacaoBordado_ecobag">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
-                                        id="PersonalizaçãoSilk_ecobag">
+                                    <select name="silkEcobag" class="inputDetalhes required"
+                                        id="personalizacaoSilk_ecobag">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <div class="vetorCon">
                                         <h3>
                                             Anexar os Arquivos <br />
@@ -575,11 +625,12 @@
                                             type="checkbox" /><span class="slider"></span></label>
                                 </p>
                                 <div id="divMask" class="sectionDetalhes">
+                                    <input name="mascara" type="hidden" value="mascara">
                                     <br />
                                     <b>Detalhes da Peça</b>
                                     <label class="#">Malha da Peça:</label>
-                                    <select name="Material_da_peca_mask" class="inputDetalhes required"
-                                        id="Material_da_peça_mask">
+                                    <select name="Material_da_pecaMask" class="inputDetalhes required"
+                                        id="Material_da_peçaMask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Algodao_cardada">Algodão Cardada</option>
                                         <option value="Algodao_penteada">Algodão Penteada</option>
@@ -589,8 +640,8 @@
                                     <input type="text" name="colorName" id="maskColor" min="30" size="20" maxlength="30"
                                         placeholder="Digitar Cor" class="required" />
                                     <label class="#"></label>
-                                    <select name="Cor_da_peca_mask" class="inputDetalhes corPeca required"
-                                        id="Cor_da_peca_mask">
+                                    <select name="Cor_da_pecaMask" class="inputDetalhes corPeca required"
+                                        id="Cor_da_pecaMask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="#fff">Branco</option>
                                         <option value="#808080">Cinza</option>
@@ -619,31 +670,40 @@
                                         <option value="#f5f5dc">Beige</option>
                                     </select>
                                     <label class="#">Tipo de Forma:</label>
-                                    <select name="Tipo_de_forma_mask" class="inputDetalhes required"
-                                        id="Tipo_de_forma_mask">
+                                    <select name="Tipo_de_formaMask" class="inputDetalhes required"
+                                        id="Tipo_de_formaMask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="Bico_pato">Bico de Pato</option>
                                     </select>
-                                    <label for="amount_mask" class="#">Quantidade:</label>
-                                    <input type="number" id="amount_mask" name="qntPecas" min="30" size="20"
-                                        maxlength="30" placeholder="30 peças" class="required" /><br />
-                                    <label class="personalizarion"><b>Personalização</b></label>
+                                    <label for="amountMask" class="#">Quantidade:</label>
+                                    <input type="number" id="amountMask" name="numeroPecas" min="30" size="20"
+                                        maxlength="30" placeholder="30 peças" class="required" />
+                                    <label class="#">Tamanho da Peça:</label>
+                                    <select name="tamanho_da_peca_mascara" class="inputDetalhes required"
+                                        id="tamanho_da_peca_mascara">
+                                        <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                                        <option value="pp">PP</option>
+                                        <option value="p">P</option>
+                                        <option value="m">M</option>
+                                        <option value="g">G</option>
+                                        <option value="gg">GG</option>
+                                    </select>
+                                    <br />
+                                    <label class="custom"><b>Personalização</b></label>
                                     <label class="#">Bordado:</label>
-                                    <select name="PersonalizaçãoBordado" class="inputDetalhes required"
-                                        id="PersonalizaçãoBordado_mask">
+                                    <select name="bordadoMascara" class="inputDetalhes required"
+                                        id="PersonalizacaoBordadoMask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <label class="#">Silkscreen:</label>
-                                    <select name="PersonalizaçãoSilk" class="inputDetalhes required"
-                                        id="PersonalizaçãoSilk_mask">
+                                    <select name="silkMascara" class="inputDetalhes required"
+                                        id="personalizacaoSilkMask">
                                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                                         <option value="sim">Sim</option>
                                         <option value="não">Não</option>
                                     </select>
-                                    <br />
                                     <div class="vetorCon">
                                         <h3>
                                             Anexar os Arquivos <br />
