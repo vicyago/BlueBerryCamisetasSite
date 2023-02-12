@@ -1,0 +1,64 @@
+$input_dict = array(
+
+"Nome" => "Nome do Cliente",
+"Email" => "E-mail",
+"dddCel" => "DDD do Celular",
+"Telefone" => "Número do Celular",
+"dddTelefone" => "DDD do Telefone",
+"Telefone2" => "Número do telefone",
+
+"numeroPecas" => "Quantidade de Peças",
+
+"Material_da_peca_camiseta" => "Material da Camiseta",
+"Cor_da_peca_camiseta" => "Cor da Camiseta",
+"Tipo_de_gola_camiseta" => "Gola da Camiseta",
+"tamanho_da_peca_camiseta" => "Tamanho da Camiseta",
+"bordadoCamiseta" => "Bordado da Camiseta",
+"silkCamiseta" => "Silkscreen da Camiseta",
+"numeroPecasCamiseta" => "Número Peças Camiseta",
+
+"Material_da_peca_polo" => "Material da Polo",
+"Cor_da_peca_polo" => "Cor da Polo",
+"Tipo_de_gola_polo" => "Gola da Polo",
+"tamanho_da_peca_polo" => "Tamanho da Polo",
+"bordadoPolo" => "Bordado da Polo",
+"silkPolo" => "Silkscreen da Polo",
+"numeroPecasPolo" => "Número Peças Polo",
+
+"Material_da_peca_agasalho" => "Material da Agasalho",
+"Cor_da_peca_agasalho" => "Cor da Agasalho",
+"capuzAgasalho" => "Capuz do Agasalho",
+"bolsoAgasalho"" => "Bolso do Agasalho",
+"tamanho_da_peca_agasalho" => "Tamanho da Agasalho",
+"bordadoAgasalho" => "Bordado do Agasalho",
+"silkAgasalho" => "Silkscreen do Agasalho",
+"numeroPecasAgasalho" => "Número Peças Agasalho",
+
+"Material_da_peca_abada" => "Material da Abadá",
+"Cor_da_peca_abada" => "Cor da Abadá",
+"Tipo_de_abertura_abada" => "Abertura da Abadá",
+"tamanho_da_peca_abada" => "Tamanho da Abadá",
+"bordadoAbada" => "Bordado do Abadá",
+"silkAbada" => "Silkscreen do Abadá",
+name="numeroPecasAbada" => "Número Peças Abadá",
+
+"Material_da_peca_ecobag" => "Material da Ecobag",
+"Cor_da_peca_ecobag" => "Cor da Ecobag",
+"Tipo_de_alça_ecobag" => "Alça da Ecobag",
+"tamanho_da_peca_ecobag" => "Tamanho da Ecobag",
+"bordadoEcobag" => "Bordado da Ecobag",
+"silkEcobag" => "Silkscreen da Ecobag",
+"numeroPecasEcobag" => "Número Peças Ecobag",
+
+"Material_da_pecaMask" => "Material da Máscara",
+"Cor_da_pecaMask" => "Cor da Máscara",
+"Tipo_de_formaMask" => "Formato da Máscara",
+"tamanho_da_peca_mascara" => "Tamanho da Máscara",
+"bordadoMascara" => "Bordado da Máscara",
+"silkMascara" => "Silkscreen da Máscara",
+"numeroPecasMask" => "Número de Peças Máscara",
+
+"Comentario" => "Observações e Comentários",
+"tituloMensagem" => Formulário de Orçamento
+
+);
