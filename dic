@@ -7,8 +7,6 @@ $input_dict = array(
 "dddTelefone" => "DDD do Telefone",
 "Telefone2" => "Número do telefone",
 
-"numeroPecas" => "Quantidade de Peças",
-
 "Material_da_peca_camiseta" => "Material da Camiseta",
 "Cor_da_peca_camiseta" => "Cor da Camiseta",
 "Tipo_de_gola_camiseta" => "Gola da Camiseta",
