@@ -1,0 +1,63 @@
+.wrap1 {
+    flex-wrap: wrap;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-item {
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    line-height: 150px;
+    color: #08196c;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+@media (max-width: 305px) {
+    .nossosProdutos {
+        font-size: 1rem;
+    }
+}
+
+.flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0.3em;
+    line-height: 1.5em;
+    border-radius: 5px;
+    margin: 20px 10px;
+    border-color: #527dfc;
+    border-style: dotted;
+    box-shadow: 0 1px 5px 2px #575757b6;
+    padding: 15px 20px;
+    background-color: white;
+}
+
+.flexbox-column {
+    display: flex;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .flexbox-column {
+        width: 50%;
+    }
+}
+
+.flexbox-content {
+    display: flex;
+    align-self: center;
+}
+
+.flexbox-container > div:first-child {
+    color: brown;
+}

@@ -1,0 +1,32 @@
+.btn2top .sticky-btn {
+    position: fixed;
+    bottom: -96px;
+    left: 30px;
+    border-radius: 50%;
+    transition: all 0.9s ease;
+}
+.btn2top .sticky-btn img {
+    width: 40px;
+    height: 40px;
+}
+.btn2top .sticky-btn.revealed {
+    bottom: 20px;
+    opacity: 1;
+}
+.btn2top a.sticky-btn {
+    font-family: sans-serif;
+    padding: 9px;
+    display: block;
+    transition: all 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .btn2top .sticky-btn {
+        left: 1px;
+    }
+    .btn2top .sticky-btn.revealed {
+        bottom: 10px;
+    }
+}
